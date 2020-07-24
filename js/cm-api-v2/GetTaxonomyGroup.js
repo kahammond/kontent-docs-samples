@@ -9,14 +9,14 @@ const client = new ManagementClient({
 });
 
 client.getTaxonomy()
-    .byTaxonomyCodename("personas_222")
-    //.byTaxonomyID("dbff8416-c4c7-45d2-b497-a4a71a5cbe30")
-    //.byTaxonomyExternalID("Tax-Group-124")
-    .toObservable()
-    .subscribe((response) => {
-        console.log(response);
-    },
-    (error) => {
-        console.log(error);
-    });
+  .byTaxonomyCodename("categories")
+  //.byTaxonomyID("bef9dd62-a3b8-4146-83e4-33be707899b4")
+  //.byTaxonomyExternalID("my-little-taxopony")
+  .toObservable()
+  .subscribe((response) => {
+    console.log(response);
+  },
+  (error) => {
+    console.log(error);
+  });
 // EndDocSection
